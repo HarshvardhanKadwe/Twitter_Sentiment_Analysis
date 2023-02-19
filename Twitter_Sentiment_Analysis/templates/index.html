@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tweezy</title>
+    <!-- <link rel="stylesheet" href="/static/style.css"> -->
+    <link rel= "stylesheet" type="text/css" href= "{{ url_for('static',filename='style.css') }}">
+</head>
+<body>
+        <!-- Particles.js div -->
+        <div id="particles-js">
+            <div class="heading">
+                <h1 color="white">Welcome to Twitter Analysis</h1>
+                <form method="POST" action="/analysis">
+                    <label for="fname">Query</label><br>
+                    <input type="text" name="ques" placeholder="Search something..."><br>
+                </form>
+            </div>
+        </div>
+    <!-- <div id="particles-js"> -->
+        <!-- <script src="{{url_for('static', filename='particles.js')}}"></script>
+        <script src="{{url_for('static', filename='app.js')}}"></script> 
+         -->
+        <!-- <h1>Welcome to Twitter Analysis</h1> -->
+        <!-- <div>
+            <form method="POST" action="/analysis">
+                <label for="fname">Query</label><br>
+                <input type="text" name="ques" value="search"><br>
+            </form>
+        </div>
+    </div> -->
+    <!-- Import Particles.js and app.js files -->
+    <script src="{{url_for('static', filename='particles.js')}}"></script>
+    <script src="{{url_for('static', filename='app.js')}}"></script>
+        
+</body>
+</html>
